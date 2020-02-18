@@ -31,7 +31,7 @@ pipeline
               withAnt(installation: 'localant', jdk: 'localjdk')
 					{
 					
-					sh 'ant compile'
+					sh 'ant prepare'
 					
                       				}
 					   
@@ -42,7 +42,7 @@ pipeline
 					}
 				
 				
-				stage ('test')
+				stage ('compile')
 				
 				 {
 				 
@@ -52,7 +52,7 @@ pipeline
             withAnt(installation: 'localant', jdk: 'localjdk')
 					{
 					
-					sh 'ant test'
+					sh 'ant compile'
 					
                       				}
 					   
