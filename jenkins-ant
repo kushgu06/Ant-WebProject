@@ -31,7 +31,7 @@ pipeline
               withAnt(installation: 'localant', jdk: 'localjdk')
 					{
 					
-					sh 'ant validate'
+					sh 'ant compile'
 					
                       				}
 					   
